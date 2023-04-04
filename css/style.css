@@ -1,0 +1,234 @@
+.grid-container{
+    padding: 5.5vh 0 0 0;
+    margin: 0 12%;
+    display: grid;
+    grid-template-areas:
+                         'corriere corriere corriere'
+                         'adv adv adv'
+                         'temi temi temi'
+                         'corrieretv corrieretv corrieretv'
+                         'news news news_adv';
+    /*gap: 10px;*/
+    grid-template-rows: 0.4fr 1.2fr 0.25fr 0.55fr 16fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1vh;
+}
+
+.corriere_big_logo{
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    grid-area: corriere;
+    display: grid;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+
+.corriere_big_logo > img{
+    width: 48%;
+    display:block;
+    margin:auto;
+}
+
+.corriere_big_logo > span{
+    width: 48%;
+    display:block;
+    margin: 1em auto 0 auto;
+    text-align: left;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    color: darkgray;
+}
+
+.main_adv{
+    grid-area: adv;
+    display: flex;
+    justify-content: center;
+}
+
+.main_adv > img{
+    display:block;
+    margin:auto;
+    width: 100%;
+}
+
+.hot_themes{
+    margin-top: 1.3em;
+    grid-area: temi;
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    align-items: center;
+    border-bottom: 0.05em solid lightgrey;
+    border-top: 0.05em solid lightgrey;
+}
+
+.hot_themes > span{
+    flex: 1;
+    flex-basis: fit-content;
+    color: deepskyblue;
+}
+
+.corriere-tv{
+    grid-area:corrieretv;
+    margin-top: 0.7em;
+    padding-bottom: 1.4em;
+    /*border-bottom: 0.05em solid lightgrey;*/
+    height: max-content;
+}
+
+.corriere-tv > span{
+    /*background-color: blue;*/
+    height: 1em;
+}
+
+.corriere-tv > span > img{
+    display: inline-block;
+    margin-left: 1em;
+    height: 0.8em;
+    padding-top: 0.2em;
+}
+
+.video-container{
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 0.5em;
+    align-items: center;
+}
+
+.video-box{
+    margin: 0 0.5em;
+    flex:1;
+    height: 70%;
+    min-width: 5vw;
+    display: flex;
+    overflow: hidden;
+}
+
+.video-box > a{
+    margin: 0 0 0 0.5em;
+    text-align:left;
+    font-size: calc(10px + 0.3vh + 0.2vw);
+    /*word-wrap: break-word;
+    white-space: pre-wrap;
+    word-break: break-word;*/
+}
+.video-box > img{
+    float: left;
+    max-height: 100%;
+    object-fit: contain;
+    max-width: 50%;
+    display: block;
+}
+
+.news{
+    height: max-content;
+    grid-area: news;
+    border-right: 0.05em solid lightgrey;
+    border-bottom: 0.05em solid lightgrey;
+}
+
+.a_macro{
+    color: grey;
+    font-size: 80%;
+    font-family: Arial, sans-serif;
+}
+
+.a_author{
+    color: deepskyblue;
+    font-style: italic;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    font-size: 80%;
+}
+
+.a_title{
+    font-size: 250%;
+    margin: 0.1em 0 0 0;
+}
+
+.a_description{
+
+}
+
+article{
+    padding-top: 1.4em;
+    margin: 0 0.7em 0.7em 0;
+    border-top: 0.05em solid lightgrey;
+    /*border-bottom: 0.05em solid lightgrey;*/
+    display: inline-block;
+}
+
+.double_article{
+    margin: 0 0.7em 0.7em 0;
+    padding-top: 1.4em;
+    border-top: 0.05em solid lightgrey;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    height: 100%;
+    width: calc(100% - 0.7em);
+}
+
+.complex_article{
+    height: 100%;
+}
+
+.small_article_dx{
+    flex: 1;
+    border-top: 0;
+    padding-left: 2%;
+    border-left: 0.05em solid lightgrey;
+    width: 48%;
+}
+
+.small_article_sx{
+    flex: 1;
+    border-top: 0;
+    width: 48%;
+}
+
+.small_article_dx > img, .small_article_sx > img{
+}
+
+.complex_article > img{
+    float: left;
+    height: 100%;
+    width: 44%;
+    padding-right: 0.7em;
+    padding-bottom: 0.7em;
+}
+
+.complex_article h1{
+    margin: 0.1em 0 0 0;
+}
+
+.side_adv{
+    grid-area: news_adv;
+    justify-content: center;
+}
+
+.corriere-tv-side{
+   background-color: steelblue;
+}
+
+.corriere-tv-side > img{
+    width: 40%;
+    margin: auto;
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
+    display: block;
+}
+
+.line {
+    border-top: 0.05em solid lightgrey;
+    margin: 0 0 0.15em 0;
+}
+
+@media screen and (max-width: 768px) { /* Tablets */
+    .grid-container{
+        margin: 0 2%;
+        /*grid-template-rows: 1fr 2fr 0.45fr 1fr 1fr;*/
+    }
+}
