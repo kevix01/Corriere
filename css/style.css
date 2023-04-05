@@ -14,7 +14,7 @@ a{
                          'corrieretv corrieretv corrieretv'
                          'news news news_adv';
     /*gap: 10px;*/
-    grid-template-rows: 0.4fr 1.2fr 0.25fr 0.55fr 16fr;
+    grid-template-rows: 0.4fr 0.3fr 0.25fr 0.40fr 16fr;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 1vh;
 }
@@ -40,7 +40,7 @@ a{
     display:block;
     margin: 1em auto 0 auto;
     text-align: left;
-    font-size: 12px;
+    font-size: calc(7px + 0.3vw + 0.15vh);
     font-weight: bold;
     font-family: Arial, sans-serif;
     color: darkgray;
@@ -146,6 +146,16 @@ a{
     font-family: Arial, sans-serif;
 }
 
+.a_macro-img{
+    top: 0;
+}
+
+.a_macro-img > img{
+    display:block;
+    width: 5em;
+    object-fit: contain;
+}
+
 .a_author{
     color: deepskyblue;
     font-style: italic;
@@ -164,7 +174,7 @@ a{
 }
 
 article{
-    padding-top: 1.4em;
+    padding-top: 0.7em;
     margin: 0 0.7em 0.7em 0;
     border-top: 0.05em solid lightgrey;
     /*border-bottom: 0.05em solid lightgrey;*/
@@ -173,6 +183,7 @@ article{
 
 article > img{
     cursor: pointer;
+    width: 100%;
 }
 
 .double_article{
@@ -239,6 +250,42 @@ article > img{
 .line {
     border-top: 0.05em solid lightgrey;
     margin: 0 0 0.15em 0;
+}
+
+.economy_container{
+    margin: 0 0.7em 0.7em 0;
+    background-color: powderblue;
+    padding-left: 0.7em;
+    padding-right: 0.7em;
+}
+
+.vinitaly_container{
+    margin: 0 0.7em 0.7em 0;
+    background-color: aliceblue;
+    padding-left: 0.7em;
+    padding-right: 0.7em;
+}
+
+.economy_logo, .vinitaly_logo{
+    background: url("/img/shadow-top.png") center bottom / contain no-repeat;
+}
+
+.economy_logo > img{
+    width: 15%;
+    margin: auto;
+    padding-top: 1.4em;
+    padding-bottom: 1.4em;
+    display: block;
+    cursor: pointer;
+}
+
+.vinitaly_logo > img{
+    width: 30%;
+    margin: auto;
+    padding-top: 1.4em;
+    padding-bottom: 1.4em;
+    display: block;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 768px) { /* Tablets */

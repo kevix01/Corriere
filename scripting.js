@@ -62,7 +62,6 @@ window.addEventListener('scroll', function() {
 
     // checking for not visibility
     if(position.top < window.innerHeight && position.bottom - vh(10.5) < 0) {
-        console.log('Element is partially visible in screen');
         document.getElementById("weather").style.display = 'none';
         document.getElementById("logo").style.display = 'initial';
     }

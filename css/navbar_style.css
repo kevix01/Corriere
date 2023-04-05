@@ -177,6 +177,7 @@ html, body{
 .w_temp{
     font-size: 120%;
     margin-left: 0.1em;
+    letter-spacing: -0.05em;
 }
 
 .w_img{
