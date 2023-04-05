@@ -19,7 +19,15 @@
             <span class = 'editions'><a href="#">Edizioni locali</a></span>
             <span><a href="#">Servizi</a></span>
         </div>
-        <div class = 'center_nav'><img class = 'logo' src="img/logo.png" alt="logo"></div>
+        <div class = 'center_nav'>
+            <div id = 'weather'>
+                <span>Meteo:</span>
+                <span class = 'w_city'>Firenze</span>
+                <span class = 'w_temp'>12°</span>
+                <img class = 'w_img' src="img/weather.png" alt="weather img">
+            </div>
+            <img id = 'logo' src="img/logo.png" alt="logo">
+        </div>
         <div class = 'right_nav'>
             <span onclick="window.open('newurl.html','mywindow');" class = 'join_us'>
                 <span><img class = 'pallino' src="img/pallino.gif"></span>
@@ -36,7 +44,7 @@
         </div>
     </nav>
     <div class = 'grid-container'>
-        <div class = 'corriere_big_logo'>
+        <div id = 'corriere_big_logo'>
             <img src="img/logo.png" alt="big logo">
             <span>martedì 04 aprile 2023 - Aggiornato alle  12:00</span>
         </div>
@@ -45,10 +53,10 @@
         </div>
         <div class = 'hot_themes'>
             <div><strong>Temi caldi di oggi:</strong></div>
-            <span id = '1_theme'>PNRR</span>
-            <span id = '2_theme'>TATARSKY</span>
-            <span id = '3_theme'>ELEZIONI FRIULI VENEZIA GIULIA</span>
-            <span id = '4_theme'>GUERRA UCRAINA RUSSIA</span>
+            <span id = '1_theme'><a href="#">PNRR</a></span>
+            <span id = '2_theme'><a href="#">TATARSKY</a></span>
+            <span id = '3_theme'><a href="#">ELEZIONI FRIULI VENEZIA GIULIA</a></span>
+            <span id = '4_theme'><a href="#">GUERRA UCRAINA RUSSIA</a></span>
         </div>
         <div class = 'corriere-tv'>
             <span><img src="img/corriere-tv.jpg" alt="corriere tv"></span>
@@ -56,80 +64,80 @@
             <div class = 'video-container'>
                 <div class = video-box id = 'video1'>
                     <img src="img/video1.jpg" alt="video">
-                    <a>Nella comunità che aiuta i ragazzi violenti: «Genitori assenti»</a>
+                    <a href="#">Nella comunità che aiuta i ragazzi violenti: «Genitori assenti»</a>
                 </div>
                 <div class = video-box id = 'video2'>
                     <img src="img/video2.jpg" alt="video">
-                    <a>Prigozhin nel caffè dove è stato ucciso il blogger Tatarsky</a>
+                    <a href="#">Prigozhin nel caffè dove è stato ucciso il blogger Tatarsky</a>
                 </div>
                 <div class = video-box id = 'video3'>
                     <img src="img/video3.jpg" alt="video">
-                    <a>Trevignano, il popolo dei fedeli della Madonna che piange: ecco cosa dicono</a>
+                    <a href="#">Trevignano, il popolo dei fedeli della Madonna che piange: ecco cosa dicono</a>
                 </div>
                 <div class = video-box id = 'video4'>
                     <img src="img/video4.jpg" alt="video">
-                    <a>Tempesta sopra New York: fulmine colpisce il One World Trade Center</a>
+                    <a href="#">Tempesta sopra New York: fulmine colpisce il One World Trade Center</a>
                 </div>
             </div>
         </div>
         <div class = 'news'>
             <article>
                 <strong class = 'a_macro'>L’INTELLIGENZA ARTIFICIALE</strong>
-                <h1 class = 'a_title'>«ChatGpt mi ha già tolto il lavoro»:
-                    le testimonianze dei lettori e delle lettrici</h1>
+                <h1 class = 'a_title'><a href="#">«ChatGpt mi ha già tolto il lavoro»:
+                    le testimonianze dei lettori e delle lettrici</a></h1>
                 <p class = 'a_author'>di Federico Fubini</p>
-                <p class = 'a_description'>La copywriter a cui è già stata tolta parte del lavoro;
+                <a href="#" class = 'a_description'>La copywriter a cui è già stata tolta parte del lavoro;
                     l'informatico che teme che la sua azienda sposti risorse verso l'automazione.
                     Ma anche chi prevede la nascita di nuove figure professionali
                     (e non per forza con profili tecnologici). Così i lettori reagiscono
-                    alle sfide poste dall'intelligenza artificiale</p>
+                    alle sfide poste dall'intelligenza artificiale</a>
             </article>
             <article class = 'complex_article'>
                 <img src="img/grattaevinci.jpeg" alt="img articolo">
                 <strong class = 'a_macro'>NEL TORINESE</strong>
-                <h1>«Ho vinto 5 milioni e la mia vita è un incubo.
-                    All’inizio sei euforico e commetti errori, come il mio con i lingotti»</h1>
+                <h1><a href="#">«Ho vinto 5 milioni e la mia vita è un incubo.
+                    All’inizio sei euforico e commetti errori, come il mio con i lingotti»</a></h1>
                 <p class = 'a_author'>di Massimo Massenzio</p>
-                <p class = 'a_description'>Vive a Torre Pellice, nel Torinese. Rapinato due volte</p>
+                <a href="#" class = 'a_description'>Vive a Torre Pellice, nel Torinese. Rapinato due volte</a>
             </article>
             <div class = 'double_article'>
                 <article class = 'complex_article small_article_sx'>
                     <strong class = 'a_macro'>IL DECRETO ALLA CAMERA</strong>
-                    <h1>Superbonus, sì al decreto (con la protesta 5 Stelle):
-                        cessione crediti, villette, detrazioni, le novità</h1>
+                    <h1><a href="#">Superbonus, sì al decreto (con la protesta 5 Stelle):
+                        cessione crediti, villette, detrazioni, le novità</a></h1>
                     <img src="img/camera.jpg" alt="img articolo">
                     <p class = 'a_author'>di Diana Cavalcoli</p>
-                    <p class = 'a_description'>Superbonus, Unicredit riapre alla cessione del credito:
-                        chi può ottenerla e quanto costa</p>
+                    <a href="#" class = 'a_description'>Superbonus, Unicredit riapre alla cessione del credito:
+                        chi può ottenerla e quanto costa</a>
                 </article>
                 <article class = 'complex_article small_article_dx'>
                     <strong class = 'a_macro'>LE NOMINE</strong>
-                    <h1>Commissione di Vigilanza Rai, tre donne al
-                        vertice Boschi e Montaruli vice della presidente Floridia</h1>
+                    <h1><a href="#">Commissione di Vigilanza Rai, tre donne al
+                        vertice Boschi e Montaruli vice della presidente Floridia</a></h1>
                     <img src="img/vigilanza.jpeg" alt="img articolo">
                     <p class = 'a_author'>di Antonella Baccaro</p>
-                    <p class = 'a_description'>La senatrice M5S eletta presidente con un accordo bipartisan.
-                        Il risiko delle altre commissioni</p>
+                    <a href="#" class = 'a_description'>La senatrice M5S eletta presidente con un accordo bipartisan.
+                        Il risiko delle altre commissioni</a>
                 </article>
             </div>
             <article class = 'complex_article'>
                 <img src="img/Linus.jpg" alt="img articolo">
                 <strong class = 'a_macro'>L'INTERVISTA</strong>
-                <h1>Linus: «In 10 anni a Milano
-                    è cambiato tutto, i giovani non riescono a viverci. Tutto carissimo, dal cibo alle case»</h1>
+                <h1><a href="#">Linus: «In 10 anni a Milano
+                    è cambiato tutto, i giovani non riescono a viverci. Tutto carissimo, dal cibo alle case»</a></h1>
                 <p class = 'a_author'>di Fabrizio Guglielmini</p>
-                <p class = 'a_description'>La voce di Radio Deejay: «La città è più internazionale
-                    ma ha ceduto una parte dell’identità meneghina»</p>
+                <a href="#" class = 'a_description'>La voce di Radio Deejay: «La città è più internazionale
+                    ma ha ceduto una parte dell’identità meneghina»</a>
             </article>
             <article class = 'complex_article'>
                 <img src="img/Kodama.jpg" alt="img articolo">
                 <strong class = 'a_macro'>IL CASO</strong>
-                <h1>Maria Kodama, vedova
-                    di Borges, non ha lasciato testamento. Che fine farà l’eredità del grande scrittore?</h1>
+                <h1><a href="#">Maria Kodama, vedova
+                    di Borges, non ha lasciato testamento. Che fine farà l’eredità del grande scrittore?</a></h1>
                 <p class = 'a_author'>di Redazione Online</p>
-                <p class = 'a_description'>La compagna di una vita è morta a 86 anni lo scorso 26 marzo.
+                <a href="#" class = 'a_description'>La compagna di una vita è morta a 86 anni lo scorso 26 marzo.
                     L’eredità è vacante: comprende almeno due case, un palazzo e soprattutto
-                    l’archivio con i manoscritti di Borges</p>
+                    l’archivio con i manoscritti di Borges</a>
             </article>
         </div>
         <div class = 'side_adv'>

@@ -4,10 +4,11 @@ html, body{
     letter-spacing: -0.05em;
 }
 
-.logo{
+#logo{
     margin: 0 0.1vw;
     filter: brightness(0) invert(1);
     height: 90%;
+    display: none;
 }
 
 .pallino{
@@ -153,6 +154,38 @@ html, body{
 .center_nav{
     max-width:20vw;
 }
+
+#weather{
+    justify-content: center;
+    min-height: 100%;
+    display: flex;
+    color: white;
+    font-size: 110%;
+}
+
+#weather > span{
+    text-align: center;
+}
+
+.w_city{
+    margin-left: 0.2em;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    letter-spacing: -0.05em;
+}
+
+.w_temp{
+    font-size: 120%;
+    margin-left: 0.1em;
+}
+
+.w_img{
+    height: 50%;
+    display: block;
+    margin-right: 0.1em;
+    filter: brightness(0) invert(1);
+}
+
 
 .right_nav > div > span{
     text-align: center;

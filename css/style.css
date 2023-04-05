@@ -1,3 +1,8 @@
+a{
+    text-decoration: none;
+    color: black;
+}
+
 .grid-container{
     padding: 5.5vh 0 0 0;
     margin: 0 12%;
@@ -14,7 +19,7 @@
     column-gap: 1vh;
 }
 
-.corriere_big_logo{
+#corriere_big_logo{
     padding-top: 5vh;
     padding-bottom: 5vh;
     grid-area: corriere;
@@ -24,13 +29,13 @@
     text-align: center;
 }
 
-.corriere_big_logo > img{
+#corriere_big_logo > img{
     width: 48%;
     display:block;
     margin:auto;
 }
 
-.corriere_big_logo > span{
+#corriere_big_logo > span{
     width: 48%;
     display:block;
     margin: 1em auto 0 auto;
@@ -62,11 +67,15 @@
     align-items: center;
     border-bottom: 0.05em solid lightgrey;
     border-top: 0.05em solid lightgrey;
+    font-family: Arial, sans-serif;
 }
 
 .hot_themes > span{
     flex: 1;
     flex-basis: fit-content;
+}
+
+.hot_themes > span > a{
     color: deepskyblue;
 }
 
@@ -81,6 +90,7 @@
 .corriere-tv > span{
     /*background-color: blue;*/
     height: 1em;
+    font-family: Arial, sans-serif;
 }
 
 .corriere-tv > span > img{
@@ -120,6 +130,7 @@
     object-fit: contain;
     max-width: 50%;
     display: block;
+    cursor: pointer;
 }
 
 .news{
@@ -158,6 +169,10 @@ article{
     border-top: 0.05em solid lightgrey;
     /*border-bottom: 0.05em solid lightgrey;*/
     display: inline-block;
+}
+
+article > img{
+    cursor: pointer;
 }
 
 .double_article{
