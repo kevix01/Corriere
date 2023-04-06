@@ -210,6 +210,51 @@ html, body{
     margin: auto;
 }
 
+.sections_navbar{
+    width: 30%;
+    height: 100%;
+    background: white;
+    z-index: 1;
+    transition: 0.5s;
+    transform: translateX(-100%);
+    opacity: 95%;
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sections_navbar.active{
+    transform: translateX(0);
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+
+.body.sections_navbar.active{
+    overflow: hidden;
+    height: 100vh;
+}
+
+.logo_lateral_navbar{
+    height: 5.5vh;
+    background-color: steelblue;
+    justify-content: center;
+    display: flex;
+}
+
+.logo_lateral_navbar > img{
+    width: 65%;
+    display:block;
+    margin:auto;
+    filter: brightness(0) invert(1);
+}
+
+#close_lateral_navbar{
+    width:4%;
+    cursor: pointer;
+}
+
 @media screen and (max-width: 768px) { /* Tablets */
     .right_nav{
         padding-right: 0;

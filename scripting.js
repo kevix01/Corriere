@@ -76,3 +76,57 @@ function vw(percent) {
     const w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
     return (percent * w) / 100;
 }
+
+function getScrollBarWidth() {
+    let el = document.createElement("div");
+    el.style.cssText = "overflow:scroll; visibility:hidden; position:absolute;";
+    document.body.appendChild(el);
+    let width = el.offsetWidth - el.clientWidth;
+    el.remove();
+    return width;
+}
+
+$.fn.disableScroll = function() {
+    window.oldScrollPos = $(window).scrollTop();
+
+    $(window).on('scroll.scrolldisabler',function ( event ) {
+        $(window).scrollTop( window.oldScrollPos );
+        event.preventDefault();
+    });
+};
+
+$.fn.enableScroll = function() {
+    $(window).off('scroll.scrolldisabler');
+};
+
+$(document).ready(function () {
+    $(".menu").click(function () {
+        $(".sections_navbar").toggleClass("active");
+        //$("#selector").disableScroll();
+        //$('body').css('overflow-y', 'hidden');
+    });
+    $("#sections").click(function () {
+        //$('body').css('overflow-y', 'hidden');
+        $(".sections_navbar").toggleClass("active");
+        //$("#selector").disableScroll();
+        //$('#content').addClass('fixed');
+    });
+    $("#close_lateral_navbar").click(function () {
+        $(".sections_navbar").toggleClass("active");
+        //$("#selector").enableScroll();
+        //$('body').css('overflow-y', 'visible');
+        //$('#content').removeClass('fixed');
+        //$('body').css.removeClass('no_scroll');
+    });
+});
+
+function disableScrolling(){
+    const x=window.scrollX;
+    const y=window.scrollY;
+    window.onscroll=function(){window.scrollTo(x, y);};
+}
+
+function enableScrolling(){
+    window.onscroll=function(){};
+}
+

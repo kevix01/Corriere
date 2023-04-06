@@ -14,7 +14,7 @@ a{
                          'corrieretv corrieretv corrieretv'
                          'news news news_adv';
     /*gap: 10px;*/
-    grid-template-rows: 0.4fr 0.3fr 0.25fr 0.40fr 16fr;
+    grid-template-rows: 0.2fr 0.15fr 0.45fr 0.25fr 16fr;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 1vh;
 }
@@ -23,7 +23,7 @@ a{
     padding-top: 5vh;
     padding-bottom: 5vh;
     grid-area: corriere;
-    display: grid;
+    display: flex;
     width: 100%;
     justify-content: center;
     text-align: center;
@@ -291,6 +291,6 @@ article > img{
 @media screen and (max-width: 768px) { /* Tablets */
     .grid-container{
         margin: 0 2%;
-        /*grid-template-rows: 1fr 2fr 0.45fr 1fr 1fr;*/
+        grid-template-rows: 0.15fr 0.20fr 0.40fr 0.20fr 16fr;
     }
 }
