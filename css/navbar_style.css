@@ -51,6 +51,7 @@ html, body{
     font-family: Monaco, monospace;
     letter-spacing: 0;
     /*transition: top 0.3s;*/
+    z-index: 1;
 }
 
 /*#navbar > span{
