@@ -35,6 +35,10 @@ html, body{
     cursor: pointer;
 }
 
+#navbar_mobile{
+    display: none;
+}
+
 #navbar{
     background-color: steelblue;
     width: 100%;

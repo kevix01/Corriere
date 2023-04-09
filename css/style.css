@@ -15,7 +15,7 @@ a{
                          'news news news_adv'
                          'footer footer footer';
     /*gap: 10px;*/
-    grid-template-rows: 0.2fr 0.15fr 0.30fr 0.25fr 15fr 0.5fr;
+    grid-template-rows: 0.15fr 0.40fr 0.15fr 0.40fr 12fr 0.65fr;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 1vh;
 }
@@ -96,7 +96,7 @@ a{
 .corriere-tv > span > img{
     display: inline-block;
     margin-left: 1em;
-    height: 0.8em;
+    height: 1em;
     padding-top: 0.2em;
 }
 
@@ -203,7 +203,7 @@ article > img{
 }
 
 .fixed_adv_container{
-    height: 258vh;
+    height: 30%;
 }
 
 #fixed_adv{
@@ -330,15 +330,171 @@ article > img{
 }
 
 #footer{
+    display: grid;
+    grid-template-areas: 'main side';
+    grid-template-columns: 3fr 1fr;
     margin-top: 0.7em;
     grid-area: footer;
     width: 100%;
-    background-color: gray;
+    align-items: end;
 }
 
-@media screen and (max-width: 768px) { /* Tablets */
+.footer_main{
+    grid-area: main;
+    padding-right: 0.7em;
+    height: max-content;
+    bottom: 0;
+}
+
+.footer_main > span, .footer_main > div > span, .footer_side > span{
+    font-size: 80%;
+    border-right: 0.1em solid gray;
+    padding-right: 0.35em;
+}
+
+.footer_side{
+    padding-top: 4.6vh;
+    grid-area: side;
+    text-align: right;
+}
+
+.footer_logo{
+    display: block;
+    width: 20%;
+    padding-bottom: 0.7em;
+}
+
+@media screen and (min-width: 502px) and (max-width: 768px) { /* Tablets */
     .grid-container{
         margin: 0 2%;
-        grid-template-rows: 0.15fr 0.20fr 0.25fr 0.20fr 15fr 0.5fr;
+        grid-template-rows: 0.15fr 0.40fr 0.15fr 0.40fr 10fr 0.65fr;
+    }
+    .footer_logo{
+        width: 30%;
+    }
+    .a_title{
+        font-size: 170%;
+        margin: 0.1em 0 0 0;
+    }
+    article > h1{
+        font-size: 115%;
+    }
+    .side_article > h3{
+        font-size: 105%;
+    }
+    .grid-container{
+        font-size: 80%;
+    }
+    .corriere-tv > span{
+        font-size: 80%;
+    }
+}
+
+@media screen and (max-width: 501px) { /* Smartphone */
+    .grid-container{
+        margin: 0 2%;
+        grid-template-areas:
+                'mobile_adv'
+                'mobile_nav'
+                'main'
+                'main_adv'
+                'footer';
+        grid-template-rows: 0.4fr 0.3fr 16fr 15fr 0.0002fr;
+        grid-template-columns: 100%;
+        column-gap: 0;
+    }
+
+    .main_adv{
+        grid-area: mobile_adv;
+    }
+
+    .hot_themes{
+        display: none;
+    }
+    .news{
+        grid-area: main;
+        border-right: 0;
+        border-bottom: 0;
+    }
+
+    #navbar{
+        display: none;
+    }
+    #corriere_big_logo{
+        display: none;
+    }
+
+    .corriere-tv{
+        display: none;
+    }
+
+    .side_adv{
+        grid-area: main_adv;
+        border-right: 0;
+        padding-right: 0;
+    }
+
+    #footer{
+        grid-area: footer;
+    }
+    .footer_logo{
+        width: 30%;
+    }
+
+    .economy_logo > img{
+        width: 20%;
+    }
+
+    .a_macro-img > img{
+        width: 3.5em;
+    }
+    .a_title{
+        font-size: 175%;
+        margin: 0.1em 0 0 0;
+    }
+    article > h1{
+        font-size: 120%;
+    }
+    .side_article > h3{
+        font-size: 110%;
+    }
+    .grid-container{
+        font-size: 85%;
+    }
+
+    .double_article{
+        display: block;
+    }
+
+    .small_article_dx, .small_article_sx{
+        border-top: 0.05em solid lightgrey;
+        border-left: 0;
+        width: 100%;
+    }
+    .double_article{
+        border-top: 0;
+    }
+    .fixed_adv_container{
+        height: max-content;
+    }
+    #fixed_adv{
+        position: static;
+    }
+    article{
+        margin-right: 0;
+        width: 100%;
+    }
+    a.a_macro{
+        font-size: 70%;
+    }
+    #navbar_mobile{
+        display: block;
+        grid-area: mobile_nav;
+        background-color: blue;
+        width: 100%;
+    }
+
+    .vinitaly_logo > img{
+        width: 25%;
     }
 }
