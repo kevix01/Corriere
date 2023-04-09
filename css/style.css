@@ -12,9 +12,10 @@ a{
                          'adv adv adv'
                          'temi temi temi'
                          'corrieretv corrieretv corrieretv'
-                         'news news news_adv';
+                         'news news news_adv'
+                         'footer footer footer';
     /*gap: 10px;*/
-    grid-template-rows: 0.2fr 0.15fr 0.45fr 0.25fr 16fr;
+    grid-template-rows: 0.2fr 0.15fr 0.30fr 0.25fr 15fr 0.5fr;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 1vh;
 }
@@ -202,7 +203,7 @@ article > img{
 }
 
 .fixed_adv_container{
-    height: 300vh;
+    height: 258vh;
 }
 
 #fixed_adv{
@@ -219,7 +220,7 @@ article > img{
 
 .adv{
     padding-top: 0.7em;
-    margin: 0 0.7em 0.7em 0;
+    margin: 0 0 0.7em 0;
     top: 5.5vh;
 }
 
@@ -272,6 +273,7 @@ article > img{
     justify-content: center;
     border-right: 0.05em solid lightgrey;
     padding-right: 0.45em;
+    border-bottom: 0.05em solid lightgrey;
 }
 
 .corriere-tv-side{
@@ -327,9 +329,16 @@ article > img{
     cursor: pointer;
 }
 
+#footer{
+    margin-top: 0.7em;
+    grid-area: footer;
+    width: 100%;
+    background-color: gray;
+}
+
 @media screen and (max-width: 768px) { /* Tablets */
     .grid-container{
         margin: 0 2%;
-        grid-template-rows: 0.15fr 0.20fr 0.40fr 0.20fr 16fr;
+        grid-template-rows: 0.15fr 0.20fr 0.25fr 0.20fr 15fr 0.5fr;
     }
 }
