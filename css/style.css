@@ -392,14 +392,14 @@ article > img{
 
 @media screen and (max-width: 501px) { /* Smartphone */
     .grid-container{
-        margin: 0 2%;
+        margin: 0;
         grid-template-areas:
                 'mobile_adv'
                 'mobile_nav'
                 'main'
                 'main_adv'
                 'footer';
-        grid-template-rows: 0.4fr 0.3fr 16fr 15fr 0.0002fr;
+        grid-template-rows: 0.4fr 0.45fr 16fr 15fr 0.0002fr;
         grid-template-columns: 100%;
         column-gap: 0;
     }
@@ -415,6 +415,7 @@ article > img{
         grid-area: main;
         border-right: 0;
         border-bottom: 0;
+        margin: 0 2%;
     }
 
     #navbar{
@@ -432,6 +433,7 @@ article > img{
         grid-area: main_adv;
         border-right: 0;
         padding-right: 0;
+        margin: 0 2%;
     }
 
     #footer{
@@ -464,15 +466,22 @@ article > img{
 
     .double_article{
         display: block;
+        padding-top: 0;
+        margin: 0;
+        width: 100%;
     }
 
     .small_article_dx, .small_article_sx{
         border-top: 0.05em solid lightgrey;
         border-left: 0;
+        padding-left: 0;
+        margin-right: 0;
         width: 100%;
     }
     .double_article{
         border-top: 0;
+        padding-right: 0;
+        margin: 0;
     }
     .fixed_adv_container{
         height: max-content;
@@ -490,11 +499,112 @@ article > img{
     #navbar_mobile{
         display: block;
         grid-area: mobile_nav;
-        background-color: blue;
+        background-color: steelblue;
         width: 100%;
+        font-family: Monaco, monospace;
+        letter-spacing: 0;
     }
 
     .vinitaly_logo > img{
         width: 25%;
     }
+
+    .economy_container, .vinitaly_container{
+        margin-right: 0;
+    }
+    .navbar_mobile_upper{
+        display: grid;
+        grid-template-areas: 'joinus login';
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        width: 100%;
+        height: 30%;
+        border-bottom: 0.15em solid white;
+    }
+
+    .navbar_mobile_bottom{
+        height: 25%;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+        overflow: auto;
+    }
+
+    .navbar_mobile_bottom > span{
+        margin: 0 3%;
+    }
+
+    .navbar_mobile_bottom > span > a{
+        color: white;
+    }
+
+    .navbar_mobile_center{
+        height: 45%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .mobile_menu{
+        filter: brightness(0) invert(1);
+        display: inline-block;
+        margin-left: 1.5vw;
+        height: 2em;
+        cursor: pointer;
+    }
+
+    .navbar_mobile_center > span{
+        display: block;
+        min-width: 30vw;
+    }
+
+    .join_us_mobile{
+        grid-area: joinus;
+        border-radius: 6px;
+        border: 1px solid white;
+        background: white;
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        text-align: center;
+        margin: 1.5vw;
+        max-height: 70%;
+        width: 60%;
+        justify-content: center;
+    }
+
+    .login_mobile{
+        display: flex;
+        flex-flow: row wrap;
+        align-content: center;
+        justify-content: end;
+    }
+
+    .login_mobile > span{
+        justify-content: center;
+        margin-right: 1.5vw;
+        font-size: 115%;
+    }
+
+    .login_mobile > span > a{
+        color: white;
+    }
+
+    .mobile_logo{
+        width: 40vw;
+        display:block;
+        filter: brightness(0) invert(1);
+        margin: auto auto auto auto;
+    }
+
+    .last_update_mobile{
+        display: block;
+        margin: 0.3em auto auto auto;
+        text-align: center;
+        color: white;
+    }
+
+    .navbar_mobile_center > div{
+
+    }
+
 }
