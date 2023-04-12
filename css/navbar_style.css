@@ -216,13 +216,14 @@ html, body{
 }
 
 .sections_navbar{
-    width: 30%;
+    width: 36%;
     height: 100%;
     background: white;
     z-index: 1;
     transition: 0.5s;
     transform: translateX(-100%);
-    opacity: 95%;
+    /*opacity: 95%;*/
+    /*border-right: 0.1em solid steelblue;*/
     display: flex;
     position: fixed;
     flex-direction: column;
@@ -231,9 +232,6 @@ html, body{
 
 .sections_navbar.active{
     transform: translateX(0);
-    -webkit-filter: grayscale(0%);
-    -moz-filter: grayscale(0%);
-    filter: grayscale(0%);
 }
 
 .body.sections_navbar.active{
@@ -249,7 +247,7 @@ html, body{
 }
 
 .logo_lateral_navbar > img{
-    width: 65%;
+    width: 60%;
     display:block;
     margin:auto;
     filter: brightness(0) invert(1);

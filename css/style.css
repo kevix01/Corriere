@@ -15,7 +15,7 @@ a{
                          'news news news_adv'
                          'footer footer footer';
     /*gap: 10px;*/
-    grid-template-rows: 0.15fr 0.40fr 0.15fr 0.40fr 12fr 0.65fr;
+    grid-template-rows: 0.10fr 0.10fr 0.05fr 0.20fr 8fr 0.25fr;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 1vh;
 }
@@ -68,6 +68,7 @@ a{
     border-bottom: 0.05em solid lightgrey;
     border-top: 0.05em solid lightgrey;
     font-family: Arial, sans-serif;
+    min-height: 5vh;
 }
 
 .hot_themes > span{
@@ -367,7 +368,7 @@ article > img{
 @media screen and (min-width: 502px) and (max-width: 768px) { /* Tablets */
     .grid-container{
         margin: 0 2%;
-        grid-template-rows: 0.15fr 0.40fr 0.15fr 0.40fr 10fr 0.65fr;
+        grid-template-rows: 0.10fr 0.10fr 0.05fr 0.20fr 7fr 0.30fr;
     }
     .footer_logo{
         width: 30%;
@@ -402,6 +403,7 @@ article > img{
         grid-template-rows: 0.4fr 0.45fr 16fr 15fr 0.0002fr;
         grid-template-columns: 100%;
         column-gap: 0;
+        padding-top: 0;
     }
 
     .main_adv{
@@ -522,26 +524,42 @@ article > img{
         border-bottom: 0.15em solid white;
     }
 
-    .navbar_mobile_bottom{
+    #navbar_mobile_bottom{
         height: 25%;
         white-space: nowrap;
         -webkit-overflow-scrolling: touch;
         overflow: auto;
     }
 
-    .navbar_mobile_bottom > span{
+    #navbar_mobile_bottom > span{
         margin: 0 3%;
     }
 
-    .navbar_mobile_bottom > span > a{
+    #navbar_mobile_bottom > span > a{
         color: white;
     }
 
-    .navbar_mobile_center{
+    #navbar_mobile_center{
         height: 45%;
+        width: 100%;
+        top: 0;
         display: flex;
         justify-content: flex-start;
         align-items: center;
+        background-color: steelblue;
+    }
+
+    .sections_navbar{
+        width: 100%;
+        opacity: 100%;
+    }
+
+    .logo_lateral_navbar{
+        height: 10vh;
+    }
+
+    .logo_lateral_navbar > img{
+        width: 55%;
     }
 
     .mobile_menu{
@@ -552,7 +570,7 @@ article > img{
         cursor: pointer;
     }
 
-    .navbar_mobile_center > span{
+    #navbar_mobile_center > span{
         display: block;
         min-width: 30vw;
     }
@@ -584,6 +602,8 @@ article > img{
         margin-right: 1.5vw;
         font-size: 115%;
     }
+
+
 
     .login_mobile > span > a{
         color: white;

@@ -42,6 +42,27 @@ window.addEventListener("resize", function() {
     } else {
         document.getElementById("video4").style.display = 'none';
     }
+
+    //navbar fixed mobile
+    if (window.matchMedia("(min-width: 501px)").matches) {
+        //not mobile
+    } else {
+        //mobile
+        const element = document.getElementById('navbar_mobile_bottom')
+        const position = element.getBoundingClientRect();
+
+        // checking whether fully visible
+        if(position.top >= 0 && position.bottom <= window.innerHeight) {
+            document.getElementById("navbar_mobile_center").style.position = 'static';
+            document.getElementById("navbar_mobile_center").style.height = '45%';
+        }
+
+        // checking for not visibility
+        if(position.top < window.innerHeight && position.bottom < 0) {
+            document.getElementById("navbar_mobile_center").style.position = 'fixed';
+            document.getElementById("navbar_mobile_center").style.height = '10vh';
+        }
+    }
 })
 
 window.addEventListener('scroll', function() {
@@ -64,6 +85,27 @@ window.addEventListener('scroll', function() {
     if(position.top < window.innerHeight && position.bottom - vh(10.5) < 0) {
         document.getElementById("weather").style.display = 'none';
         document.getElementById("logo").style.display = 'initial';
+    }
+
+    //navbar fixed mobile
+    if (window.matchMedia("(min-width: 501px)").matches) {
+        //not mobile
+    } else {
+        //mobile
+        const element = document.getElementById('navbar_mobile_bottom')
+        const position = element.getBoundingClientRect();
+
+        // checking whether fully visible
+        if(position.top >= 0 && position.bottom <= window.innerHeight) {
+            document.getElementById("navbar_mobile_center").style.position = 'static';
+            document.getElementById("navbar_mobile_center").style.height = '45%';
+        }
+
+        // checking for not visibility
+        if(position.top < window.innerHeight && position.bottom < 0) {
+            document.getElementById("navbar_mobile_center").style.position = 'fixed';
+            document.getElementById("navbar_mobile_center").style.height = '10vh';
+        }
     }
 });
 
@@ -101,6 +143,11 @@ $.fn.enableScroll = function() {
 
 $(document).ready(function () {
     $(".menu").click(function () {
+        $(".sections_navbar").toggleClass("active");
+        //$("#selector").disableScroll();
+        //$('body').css('overflow-y', 'hidden');
+    });
+    $(".mobile_menu").click(function () {
         $(".sections_navbar").toggleClass("active");
         //$("#selector").disableScroll();
         //$('body').css('overflow-y', 'hidden');
