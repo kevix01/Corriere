@@ -482,7 +482,7 @@ article > img{
     }
 }
 
-@media only screen and (max-width: 600px) { /* Smartphone */
+@media only screen and (max-width: 600px){ /* Smartphone */
     .grid-container{
         margin: 0;
         grid-template-areas:
