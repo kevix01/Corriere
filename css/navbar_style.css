@@ -37,6 +37,7 @@ html, body{
 
 #navbar_mobile{
     display: none;
+    min-height: 22vh;
 }
 
 #navbar{

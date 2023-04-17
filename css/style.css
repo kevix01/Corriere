@@ -374,6 +374,8 @@ article > img{
     margin-top: 0.7em;
     grid-area: footer;
     width: 100%;
+    font-family: Arial, sans-serif;
+    letter-spacing: 0;
 }
 
 .footer_menu_mobile > span{
@@ -385,7 +387,9 @@ article > img{
 .footer_menu_mobile{
     grid-area: main;
     height: max-content;
-    padding: 0 2%;
+    padding-right: 2%;
+    padding-left: 2%;
+    padding-top: 0.35em;
     background-color: lightgrey;
 }
 
@@ -400,7 +404,7 @@ article > img{
     justify-content: center;
 }
 
-.footer_menu_mobile > div > span{
+.footer_menu_mobile > div > span, .chi_siamo_footer > span{
     width: 30%;
     text-align: center;
 }
@@ -410,7 +414,8 @@ article > img{
 }
 
 .footer_menu_mobile > div > span > a{
-    color: deepskyblue;
+    color: dodgerblue;
+    font-size: 90%;
 }
 
 
@@ -447,7 +452,6 @@ article > img{
 
 .logo_footer_mobile{
     width: 35%;
-    margin-top:0.7em;
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) { /* Medium screen */
@@ -482,7 +486,7 @@ article > img{
     }
 }
 
-@media only screen and (max-width: 600px){ /* Smartphone */
+@media only screen and (max-width: 600px){ /* Mobile */
     .grid-container{
         margin: 0;
         grid-template-areas:
@@ -491,10 +495,14 @@ article > img{
                 'main'
                 'main_adv'
                 'footer';
-        grid-template-rows: 0.4fr 0.45fr 15.5fr 14fr 0.7fr;
+        grid-template-rows: 0.30fr 0.50fr auto auto auto;
         grid-template-columns: 100%;
         column-gap: 0;
         padding-top: 0;
+    }
+
+    .side_adv{
+        height: max-content;
     }
 
     .main_adv{
@@ -701,9 +709,10 @@ article > img{
 
     .mobile_logo{
         width: 40vw;
+        min-width: 135px;
         display:block;
         filter: brightness(0) invert(1);
-        margin: auto auto auto auto;
+        margin: auto;
     }
 
     .last_update_mobile{
@@ -711,6 +720,7 @@ article > img{
         margin: 0.3em auto auto auto;
         text-align: center;
         color: white;
+        font-size: 75%;
     }
 
     .navbar_mobile_center > div{
@@ -723,5 +733,12 @@ article > img{
 
     #footer_mobile{
         display: grid;
+    }
+}
+
+@media only screen and (max-width: 335px){ /*minimum page width*/
+    html, body{
+        min-width: 335px;
+        overflow: auto;
     }
 }
