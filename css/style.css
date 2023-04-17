@@ -361,11 +361,83 @@ article > img{
 
 .footer_logo{
     display: block;
-    width: 20%;
+    width: 25%;
     padding-bottom: 0.7em;
 }
 
-@media screen and (min-width: 502px) and (max-width: 768px) { /* Tablets */
+#footer_mobile{
+    display: none;
+    grid-template-areas: 'main'
+                         'chisiamo'
+                         'bottom';
+    grid-template-rows: 3fr 1fr 1fr;
+    margin-top: 0.7em;
+    grid-area: footer;
+    width: 100%;
+}
+
+.footer_menu_mobile > span{
+    font-size: 80%;
+    border-right: 0.1em solid gray;
+    padding-right: 0.35em;
+}
+
+.footer_menu_mobile{
+    grid-area: main;
+    height: max-content;
+    padding: 0 2%;
+    background-color: lightgrey;
+}
+
+.footer_menu_mobile > div{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+
+#mobile_cookies{
+    justify-content: center;
+}
+
+.footer_menu_mobile > div > span{
+    width: 30%;
+    text-align: center;
+}
+
+.main_footer { /*mobile*/
+    grid-area: main;
+    height: max-content;
+}
+
+.chi_siamo_footer{ /*mobile*/
+    grid-area: chisiamo;
+    height: max-content;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2%;
+}
+
+.bottom_footer{ /*mobile*/
+    grid-area: bottom;
+    height: max-content;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2%;
+}
+
+.logo_footer_mobile{
+    width: 35%;
+    padding-bottom: 0.35em;
+    padding-top: 0.7em;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) { /* Medium screen */
+    .footer_logo{
+        width: 30%;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 768px) { /* Tablets */
     .grid-container{
         margin: 0 2%;
         grid-template-rows: 0.10fr 0.10fr 0.05fr 0.20fr 7fr 0.30fr;
@@ -391,7 +463,7 @@ article > img{
     }
 }
 
-@media screen and (max-width: 501px) { /* Smartphone */
+@media screen and (max-width: 600px) { /* Smartphone */
     .grid-container{
         margin: 0;
         grid-template-areas:
@@ -441,6 +513,7 @@ article > img{
     #footer{
         grid-area: footer;
     }
+
     .footer_logo{
         width: 30%;
     }
@@ -625,6 +698,14 @@ article > img{
 
     .navbar_mobile_center > div{
 
+    }
+
+    #footer{
+        display: none;
+    }
+
+    #footer_mobile{
+        display: grid;
     }
 
 }
