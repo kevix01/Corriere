@@ -370,7 +370,7 @@ article > img{
     grid-template-areas: 'main'
                          'chisiamo'
                          'bottom';
-    grid-template-rows: 3fr 1fr 1fr;
+    grid-template-rows: 3fr 1.5fr 1fr;
     margin-top: 0.7em;
     grid-area: footer;
     width: 100%;
@@ -393,6 +393,7 @@ article > img{
     display: flex;
     justify-content: space-between;
     flex-flow: row wrap;
+    padding: 0.35em 0;
 }
 
 #mobile_cookies{
@@ -404,6 +405,15 @@ article > img{
     text-align: center;
 }
 
+.footer_menu_mobile > span > a{
+   color: gray;
+}
+
+.footer_menu_mobile > div > span > a{
+    color: deepskyblue;
+}
+
+
 .main_footer { /*mobile*/
     grid-area: main;
     height: max-content;
@@ -411,33 +421,42 @@ article > img{
 
 .chi_siamo_footer{ /*mobile*/
     grid-area: chisiamo;
-    height: max-content;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 0 2%;
+    font-size: 90%;
+    font-weight: bold;
+}
+
+.chi_siamo_footer > span > a, .bottom_footer > span > a{
+    color: gray;
 }
 
 .bottom_footer{ /*mobile*/
     grid-area: bottom;
-    height: max-content;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 0 2%;
+    border-top: 0.1em solid lightgrey;
+    font-size: 85%;
+}
+
+.chi_siamo_footer > span, .bottom_footer > span{
+    margin: auto;
 }
 
 .logo_footer_mobile{
     width: 35%;
-    padding-bottom: 0.35em;
-    padding-top: 0.7em;
+    margin-top:0.7em;
 }
 
-@media screen and (min-width: 769px) and (max-width: 1024px) { /* Medium screen */
+@media only screen and (min-width: 769px) and (max-width: 1024px) { /* Medium screen */
     .footer_logo{
         width: 30%;
     }
 }
 
-@media screen and (min-width: 601px) and (max-width: 768px) { /* Tablets */
+@media only screen and (min-width: 601px) and (max-width: 768px) { /* Tablets */
     .grid-container{
         margin: 0 2%;
         grid-template-rows: 0.10fr 0.10fr 0.05fr 0.20fr 7fr 0.30fr;
@@ -463,7 +482,7 @@ article > img{
     }
 }
 
-@media screen and (max-width: 600px) { /* Smartphone */
+@media only screen and (max-width: 600px) { /* Smartphone */
     .grid-container{
         margin: 0;
         grid-template-areas:
@@ -472,7 +491,7 @@ article > img{
                 'main'
                 'main_adv'
                 'footer';
-        grid-template-rows: 0.4fr 0.45fr 16fr 15fr 0.0002fr;
+        grid-template-rows: 0.4fr 0.45fr 15.5fr 14fr 0.7fr;
         grid-template-columns: 100%;
         column-gap: 0;
         padding-top: 0;
@@ -676,8 +695,6 @@ article > img{
         font-size: 115%;
     }
 
-
-
     .login_mobile > span > a{
         color: white;
     }
@@ -707,5 +724,4 @@ article > img{
     #footer_mobile{
         display: grid;
     }
-
 }
