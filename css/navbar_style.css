@@ -7,7 +7,6 @@ html, body{
 #logo{
     margin: 0 0.1vw;
     filter: brightness(0) invert(1);
-    height: 90%;
     display: none;
 }
 
@@ -52,7 +51,7 @@ html, body{
     align-items: center;
     /*white-space: nowrap;*/
     position: fixed;
-    font-size: calc(5px + 1.0vh);
+    font-size: 14px;
     font-family: Monaco, monospace;
     letter-spacing: 0;
     /*transition: top 0.3s;*/
@@ -78,19 +77,10 @@ html, body{
     flex-wrap: wrap;
 }
 
-.left_nav > div{
-    /*background-color: red;*/
-    justify-content: center;
-    /*flex-wrap: wrap;
-    flex: auto;*/
-    min-width: 0;
-}
-
 .left_nav > span{
     /*background-color: blue;*/
     text-align: center;
     align-items: center;
-    margin: 2px;
 }
 
 .extended_menu{
@@ -100,20 +90,25 @@ html, body{
     text-align: center;
 }
 
+.arrow_down{
+    filter: brightness(0) invert(1);
+    display: inline-block;
+    margin-top: 0.1em;
+    height: 0.7em;
+    cursor: pointer;
+}
 
 .editions{
     flex:1;
     text-align: right;
-}
-
-.left_nav > div > span{
-    text-align: center;
+    flex-basis: fit-content;
 }
 
 .right_nav{
     padding-right: 10%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
     /*background-color: green;*/
     min-width: 0;
 }
@@ -132,13 +127,6 @@ html, body{
     min-width: 0;
     align-items: center;
     /*background-color: red;*/
-}
-
-.left_nav > div{
-    display: inline-flex;
-    flex-wrap: wrap;
-    flex: auto;
-    min-width: 0;
 }
 
 .join_us{
@@ -203,7 +191,7 @@ html, body{
     color: white;
 }
 #navbar div{
-    margin: 0 2vw;
+    margin: 0 1vw;
     height: 90%;
     align-items: center;
     flex: 1 1 0;
@@ -337,11 +325,27 @@ html, body{
     background: #ccc;
 }
 
+@media only screen and (min-width: 769px) and (max-width: 1200px) {  /* Medium screen */
+    #navbar{
+        font-size: 11px;
+    }
+    .center_nav{
+        max-width:18vw;
+    }
+}
+
 @media screen and (max-width: 768px) { /* Tablets */
+    .center_nav{
+        max-width:22vw;
+    }
+
     .right_nav{
         padding-right: 0;
     }
     .left_nav{
         padding-left: 0;
+    }
+    #navbar{
+        font-size: 10px;
     }
 }

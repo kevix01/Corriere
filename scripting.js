@@ -4,8 +4,6 @@ const tabletsWidth = 768;
 const mediumScreenWidth = 1200;
 if ( w <= smallScreenWidth) {
     document.getElementById("4_theme").style.display = 'none';
-    const sections = document.getElementById('sections');
-    sections.innerHTML = "";
 }
 
 if ( w <= tabletsWidth) {
@@ -15,13 +13,13 @@ if ( w <= tabletsWidth) {
 
 if ( w <= mediumScreenWidth) {
     document.getElementById("video4").style.display = 'none';
+    const sections = document.getElementById('sections');
+    sections.innerHTML = "";
 }
 
 
 window.addEventListener("resize", function() {
     if (window.matchMedia("(min-width: 1024px)").matches) {
-        const sections = document.getElementById('sections');
-        sections.innerHTML = "Sezioni";
         document.getElementById("4_theme").style.display = 'initial';
     } else {
         const sections = document.getElementById('sections');
@@ -39,12 +37,16 @@ window.addEventListener("resize", function() {
 
     if (window.matchMedia("(min-width: 1200px)").matches) {
         document.getElementById("video4").style.display = 'flex';
+        const sections = document.getElementById('sections');
+        sections.innerHTML = "Sezioni";
     } else {
         document.getElementById("video4").style.display = 'none';
+        const sections = document.getElementById('sections');
+        sections.innerHTML = "";
     }
 
     //navbar fixed mobile
-    if (window.matchMedia("(min-width: 600px)").matches) {
+    if (window.matchMedia("(min-width: 650px)").matches) {
         //not mobile
     } else {
         //mobile

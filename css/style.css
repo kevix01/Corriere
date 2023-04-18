@@ -475,7 +475,7 @@ article > img{
     }
 }
 
-@media only screen and (min-width: 601px) and (max-width: 768px) { /* Tablets */
+@media only screen and (min-width: 651px) and (max-width: 768px) { /* Tablets */
     .grid-container{
         margin: 0 2%;
         grid-template-rows: 0.10fr 0.10fr 0.05fr 0.20fr 7fr 0.30fr;
@@ -506,7 +506,7 @@ article > img{
     }
 }
 
-@media only screen and (max-width: 600px){ /* Mobile */
+@media only screen and (max-width: 650px){ /* Mobile */
     .grid-container{
         margin: 0;
         grid-template-areas:
