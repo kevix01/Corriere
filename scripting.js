@@ -142,23 +142,24 @@ $.fn.enableScroll = function() {
 };
 
 $(document).ready(function () {
-    $(".menu").click(function () {
+    const clickHandler = ("ontouchstart" in window ? "touchend" : "click")
+    $(".menu").on(clickHandler,function () {
         $(".sections_navbar").toggleClass("active");
         //$("#selector").disableScroll();
         //$('body').css('overflow-y', 'hidden');
     });
-    $(".mobile_menu").click(function () {
+    $(".mobile_menu").on(clickHandler,function () {
         $(".sections_navbar").toggleClass("active");
         //$("#selector").disableScroll();
         //$('body').css('overflow-y', 'hidden');
     });
-    $("#sections").click(function () {
+    $("#sections").on(clickHandler,function () {
         //$('body').css('overflow-y', 'hidden');
         $(".sections_navbar").toggleClass("active");
         //$("#selector").disableScroll();
         //$('#content').addClass('fixed');
     });
-    $("#close_lateral_navbar").click(function () {
+    $("#close_lateral_navbar").on(clickHandler,function () {
         $(".sections_navbar").toggleClass("active");
         //$("#selector").enableScroll();
         //$('body').css('overflow-y', 'visible');

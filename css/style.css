@@ -672,7 +672,11 @@ article > img{
 
     #navbar_mobile_center > span{
         display: block;
-        min-width: 30vw;
+        min-width: 0;
+    }
+
+    #navbar_mobile_center > div{
+        flex: 1;
     }
 
     .join_us_mobile{
