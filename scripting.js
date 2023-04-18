@@ -142,21 +142,20 @@ $.fn.enableScroll = function() {
 };
 
 $(document).ready(function () {
-    const clickHandler = ("ontouchstart" in window ? "touchend" : "click")
-    $(".menu").on(clickHandler,function () {
+    $(".menu").on('click',function () {
         $(".sections_navbar").toggleClass("active");
         //$("#selector").disableScroll();
         $('#overlay').css('display', 'initial');
         $('body').css('overflow', 'hidden');
     });
-    $(".mobile_menu").on(clickHandler,function () {
+    $(".mobile_menu").on('click',function () {
         $(".sections_navbar").toggleClass("active");
         $('#overlay').css('display', 'initial');
         $('body').css('overflow', 'hidden');
         //$("#selector").disableScroll();
         //$('body').css('overflow-y', 'hidden');
     });
-    $("#sections").on(clickHandler,function () {
+    $("#sections").on('click',function () {
         //$('body').css('overflow-y', 'hidden');
         $(".sections_navbar").toggleClass("active");
         $('#overlay').css('display', 'initial');
@@ -164,7 +163,7 @@ $(document).ready(function () {
         //$("#selector").disableScroll();
         //$('#content').addClass('fixed');
     });
-    $("#close_lateral_navbar").on(clickHandler,function () {
+    $("#close_lateral_navbar").on('click',function () {
         $(".sections_navbar").toggleClass("active");
         $('#overlay').css('display', 'none');
         $('body').css('overflow', 'initial');
