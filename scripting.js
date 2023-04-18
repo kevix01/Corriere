@@ -146,21 +146,28 @@ $(document).ready(function () {
     $(".menu").on(clickHandler,function () {
         $(".sections_navbar").toggleClass("active");
         //$("#selector").disableScroll();
-        //$('body').css('overflow-y', 'hidden');
+        $('#overlay').css('display', 'initial');
+        $('body').css('overflow', 'hidden');
     });
     $(".mobile_menu").on(clickHandler,function () {
         $(".sections_navbar").toggleClass("active");
+        $('#overlay').css('display', 'initial');
+        $('body').css('overflow', 'hidden');
         //$("#selector").disableScroll();
         //$('body').css('overflow-y', 'hidden');
     });
     $("#sections").on(clickHandler,function () {
         //$('body').css('overflow-y', 'hidden');
         $(".sections_navbar").toggleClass("active");
+        $('#overlay').css('display', 'initial');
+        $('body').css('overflow', 'hidden');
         //$("#selector").disableScroll();
         //$('#content').addClass('fixed');
     });
     $("#close_lateral_navbar").on(clickHandler,function () {
         $(".sections_navbar").toggleClass("active");
+        $('#overlay').css('display', 'none');
+        $('body').css('overflow', 'initial');
         //$("#selector").enableScroll();
         //$('body').css('overflow-y', 'visible');
         //$('#content').removeClass('fixed');

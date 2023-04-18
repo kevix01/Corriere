@@ -219,8 +219,9 @@ html, body{
 .sections_navbar{
     width: 36%;
     height: 100%;
+    padding-top: 5.5vh;
     background: white;
-    z-index: 1;
+    z-index: 2;
     transition: 0.5s;
     transform: translateX(-100%);
     /*opacity: 95%;*/
@@ -229,15 +230,40 @@ html, body{
     position: fixed;
     flex-direction: column;
     align-items: center;
+    font-family: Monaco, monospace;
+}
+
+.lateral_container{
+    overflow-y: scroll;
 }
 
 .sections_navbar.active{
     transform: translateX(0);
 }
 
-.body.sections_navbar.active{
-    overflow: hidden;
-    height: 100vh;
+.section_title{
+    display: inline-block;
+    color: gray;
+}
+
+.sections_container{
+    padding: 0.7em 0;
+    display: flex;
+    flex-flow: row wrap;
+    row-gap: 0.7em;
+}
+
+.sections_container > span{
+    width: 50%;
+    text-align: center;
+}
+
+.sections_container > span > a{
+    color: darkslateblue;
+}
+
+.lateral_element > span{
+    color: darkslateblue;
 }
 
 .logo_lateral_navbar{
@@ -245,6 +271,8 @@ html, body{
     background-color: steelblue;
     justify-content: center;
     display: flex;
+    position: fixed;
+    top: 0;
 }
 
 .logo_lateral_navbar > img{
@@ -257,6 +285,56 @@ html, body{
 #close_lateral_navbar{
     width:4%;
     cursor: pointer;
+}
+
+.lateral_element{
+    display: flex;
+    flex-flow: row wrap;
+    border-bottom: 0.5px solid lightgrey;
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
+    width: 100%;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.lateral_element > span{
+    width: 60%;
+}
+
+.lateral_section input[type=text] {
+    padding: 8.3px;
+    font-size: 13px;
+    border: 0.5px solid grey;
+    width: 60%;
+}
+
+.lateral_section .search-container{
+    margin-bottom: 1.4em;
+    width: 100%;
+}
+
+.lateral_section{
+    width: 92%;
+    padding: 1.4em 4%;
+    border-bottom: 0.5px solid lightgrey;
+}
+
+.lateral_section .search-container > form{
+    display: flex;
+    justify-content: center;
+}
+
+.lateral_section .search-container button {
+    padding: 6px 10px;
+    background: #ddd;
+    font-size: 18.5px;
+    border: none;
+    cursor: pointer;
+}
+
+.lateral_section .search-container button:hover {
+    background: #ccc;
 }
 
 @media screen and (max-width: 768px) { /* Tablets */
