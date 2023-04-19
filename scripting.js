@@ -90,7 +90,7 @@ window.addEventListener('scroll', function() {
     }
 
     //navbar fixed mobile
-    if (window.matchMedia("(min-width: 600px)").matches) {
+    if (window.matchMedia("(min-width: 650px)").matches) {
         //not mobile
     } else {
         //mobile
