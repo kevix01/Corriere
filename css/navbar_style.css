@@ -344,6 +344,15 @@ html, body{
     }
 }
 
+@media only screen and (min-height: 900px) {
+    .w_img{
+        height: 30%;
+    }
+    .user{
+        height: 50%;
+    }
+}
+
 @media screen and (max-width: 768px) { /* Tablets */
     .center_nav{
         max-width:22vw;
