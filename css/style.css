@@ -468,6 +468,7 @@ article > img{
 
     .sections_navbar{
         width: 40%;
+        min-width: 40%;
     }
 }
 
@@ -482,6 +483,7 @@ article > img{
 
     .sections_navbar{
         width: 48%;
+        min-width: 48%;
     }
 
     .a_title{
@@ -672,6 +674,7 @@ article > img{
 
     .sections_navbar{
         width: 100%;
+        min-width: 100%;
         opacity: 100%;
     }
 
