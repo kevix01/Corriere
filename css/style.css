@@ -363,8 +363,14 @@ article > img{
 
 .footer_logo{
     display: block;
-    width: 25%;
+    max-width: 25%;
     padding-bottom: 0.7em;
+    min-width: 125px;
+}
+
+.footer_logo > img{
+    width: 100%;
+    object-fit: contain;
 }
 
 #footer_mobile{
@@ -458,6 +464,7 @@ article > img{
 }
 
 .logo_footer_mobile > img{
+    width: 100%;
     object-fit: contain;
 }
 

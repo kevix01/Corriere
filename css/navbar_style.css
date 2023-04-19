@@ -235,6 +235,8 @@ html, body{
 .logo_lateral_navbar{
     height: 5.5vh;
     min-height: 40px;
+    width: 100%;
+    min-width: 100%;
     background-color: steelblue;
     justify-content: center;
     display: flex;
