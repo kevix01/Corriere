@@ -454,6 +454,11 @@ article > img{
 
 .logo_footer_mobile{
     width: 35%;
+    max-width: 35%;
+}
+
+.logo_footer_mobile > img{
+    object-fit: contain;
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) { /* medium screen */
