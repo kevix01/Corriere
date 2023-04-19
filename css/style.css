@@ -773,3 +773,21 @@ article > img{
         overflow: auto;
     }
 }
+
+@media only screen and (max-height: 450px){ /*minimum page width*/
+    .lateral_section .search-container{
+        margin-top: 18px;
+    }
+    .grid-container{
+        padding-top: calc(5.5vh + 20px);
+    }
+}
+
+@media only screen and (max-height: 300px){ /*minimum page width*/
+    .lateral_section .search-container{
+        margin-top: 36px;
+    }
+    .grid-container{
+        padding-top: calc(5.5vh + 40px);
+    }
+}
