@@ -765,6 +765,9 @@ article > img{
     #footer_mobile{
         display: grid;
     }
+    .sections_navbar{
+        font-size: 95%;
+    }
 }
 
 @media only screen and (max-width: 335px){ /*minimum page width*/

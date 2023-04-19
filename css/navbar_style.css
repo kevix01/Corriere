@@ -288,7 +288,7 @@ html, body{
 }
 
 .lateral_element > span{
-    width: 60%;
+    width: 70%;
 }
 
 .lateral_section input[type=text] {
@@ -339,6 +339,9 @@ html, body{
     .user{
         height: 60%;
     }
+    .sections_navbar{
+        font-size: 83%;
+    }
 }
 
 @media screen and (max-width: 768px) { /* Tablets */
@@ -354,5 +357,8 @@ html, body{
     }
     #navbar{
         font-size: 10px;
+    }
+    .sections_navbar{
+        font-size: 80%;
     }
 }
