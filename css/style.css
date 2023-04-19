@@ -665,6 +665,7 @@ article > img{
 
     #navbar_mobile_center{
         height: 45%;
+        min-height: 68px;
         width: 100%;
         top: 0;
         display: flex;
@@ -680,10 +681,11 @@ article > img{
 
     .logo_lateral_navbar{
         height: 10vh;
+        min-height: 68px;
     }
 
     .logo_lateral_navbar > img{
-        width: 55%;
+        width: 60%;
     }
 
     .mobile_menu{
