@@ -25,7 +25,6 @@ a{
                          'corrieretv corrieretv corrieretv'
                          'news news news_adv'
                          'footer footer footer';
-    /*gap: 10px;*/
     grid-template-rows: 0.10fr 0.10fr 0.05fr 0.20fr 8fr 0.25fr;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 1vh;
@@ -95,12 +94,10 @@ a{
     grid-area:corrieretv;
     margin-top: 0.7em;
     padding-bottom: 1.4em;
-    /*border-bottom: 0.05em solid lightgrey;*/
     height: max-content;
 }
 
 .corriere-tv > span{
-    /*background-color: blue;*/
     height: 1em;
     font-family: Arial, sans-serif;
 }
@@ -132,10 +129,8 @@ a{
     margin: 0 0 0 0.5em;
     text-align:left;
     font-size: calc(10px + 0.3vh + 0.2vw);
-    /*word-wrap: break-word;
-    white-space: pre-wrap;
-    word-break: break-word;*/
 }
+
 .video-box > img{
     float: left;
     max-height: 100%;
@@ -189,7 +184,6 @@ article{
     padding-top: 0.7em;
     margin: 0 0.7em 0.7em 0;
     border-top: 0.05em solid lightgrey;
-    /*border-bottom: 0.05em solid lightgrey;*/
     display: inline-block;
 }
 
@@ -263,9 +257,6 @@ article > img{
     flex: 1;
     border-top: 0;
     width: 48%;
-}
-
-.small_article_dx > img, .small_article_sx > img{
 }
 
 .complex_article > img{
@@ -465,7 +456,7 @@ article > img{
     width: 35%;
 }
 
-@media only screen and (min-width: 769px) and (max-width: 1024px) { /* Medium screen */
+@media only screen and (min-width: 769px) and (max-width: 1024px) { /* medium screen */
     .footer_logo{
         width: 30%;
     }
@@ -475,7 +466,7 @@ article > img{
     }
 }
 
-@media only screen and (min-width: 651px) and (max-width: 768px) { /* Tablets */
+@media only screen and (min-width: 651px) and (max-width: 768px) { /* tablets */
     .grid-container{
         margin: 0 2%;
         grid-template-rows: 0.10fr 0.10fr 0.05fr 0.20fr 7fr 0.30fr;
@@ -506,7 +497,7 @@ article > img{
     }
 }
 
-@media only screen and (max-width: 650px){ /* Mobile */
+@media only screen and (max-width: 650px){ /* mobile */
     .grid-container{
         margin: 0;
         grid-template-areas:
@@ -777,7 +768,7 @@ article > img{
     }
 }
 
-@media only screen and (max-height: 450px){ /*minimum page width*/
+@media only screen and (max-height: 450px){ /*adjusts page according to navbar and lateral navbar fixed menu*/
     .lateral_section .search-container{
         margin-top: 18px;
     }
@@ -786,7 +777,7 @@ article > img{
     }
 }
 
-@media only screen and (max-height: 300px){ /*minimum page width*/
+@media only screen and (max-height: 300px){ /*adjusts page according to navbar and lateral navbar fixed menu*/
     .lateral_section .search-container{
         margin-top: 36px;
     }
